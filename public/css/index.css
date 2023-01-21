@@ -11,6 +11,7 @@ body{
     margin: 0px;
     min-width: 800px;
     min-height: 600px;
+    overflow: hidden;
 }
 .content{
     margin: 50px;

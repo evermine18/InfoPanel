@@ -16,17 +16,17 @@ app.get('*', (req, res) => {
   });
 io.on('connection', (socket) => {
   console.log('a user connected');
-  io.emit("updateLines",JSON.stringify({"lines":lines}));
+  io.emit("updateLines",JSON.stringify({"lines":lines.slice(0,5)}));
   socket.on('newLine', (msg) => {
     var newLine =JSON.parse(msg);
     addLine(newLine["newLine"])
     console.log(newLine["newLine"])
-    io.emit('updateLines', JSON.stringify({"lines":lines}));
+    io.emit('updateLines', JSON.stringify({"lines":lines.slice(0,5)}));
   });
   socket.on('removeLines', (msg) => {
     console.log("remove");
     lines=[];
-    io.emit('updateLines', JSON.stringify({"lines":lines}));
+    io.emit('updateLines', JSON.stringify({"lines":lines.slice(0,5)}));
   });
   socket.on('disconnect', () => {
     console.log('user disconnected');
@@ -43,7 +43,7 @@ function checkLines(){
       lines.pop(i);
     }
   }
-  io.emit('updateLines', JSON.stringify({"lines":lines}));
+  io.emit('updateLines', JSON.stringify({"lines":lines.slice(0,5)}));
 }
 var t=setInterval(checkLines,5000);
 function addLine(line){
@@ -53,7 +53,6 @@ function addLine(line){
     for(i in lines){
       if(lines[i][2]>=line[2]&&lines[i][3]>=line[3]){
         lines.splice(i, 0, line);
-        console.log("si")
       }else if(i==lines.length-1){
         lines.splice(i+1, 0, line);
       }

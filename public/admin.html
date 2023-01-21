@@ -27,9 +27,9 @@
         </div>
         <div  class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Hora</span>
-            <input id="hora" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input id="hora" type="number" min="0" max="23" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             <span class="input-group-text" id="inputGroup-sizing-default">Minuts</span>
-            <input id="minuts" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input id="minuts" type="number" min="0" max="59" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             <span class="input-group-text" id="inputGroup-sizing-default">Data</span>
             <input id="data" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
@@ -38,6 +38,8 @@
             <input id="via" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
         <button type="button" class="btn btn-primary" onclick="afegirRuta();">Afegir</button>
+        <button type="button" class="btn btn-danger" onclick="removeLines();">Eliminar circulacions</button>
+
     </div></center>
       
       

@@ -23,6 +23,11 @@ io.on('connection', (socket) => {
     console.log(newLine["newLine"])
     io.emit('updateLines', JSON.stringify({"lines":lines}));
   });
+  socket.on('removeLines', (msg) => {
+    console.log("remove");
+    lines=[];
+    io.emit('updateLines', JSON.stringify({"lines":lines}));
+  });
   socket.on('disconnect', () => {
     console.log('user disconnected');
   });

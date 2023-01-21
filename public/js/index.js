@@ -39,6 +39,10 @@ function lineDivGenerator(name){
     }
     else if(name=="R5"){
         return "<div class='linea' style='background-color: #309CB2;''><h1 class='lineaText'>R5</h1></div>"
+    }else if(name=="S1"){
+        return "<div class='linea' style='background-color: #EC6709;''><h1 class='lineaText'>S1</h1></div>"
+    }else if(name=="S2"){
+        return "<div class='linea' style='background-color: #88BD24;''><h1 class='lineaText'>S2</h1></div>"
     }else if(name=="S3"){
         return "<div class='linea' style='background-color: #448E99;''><h1 class='lineaText'>S3</h1></div>"
     }else if(name=="S4"){
@@ -47,8 +51,14 @@ function lineDivGenerator(name){
         return "<div class='linea' style='background-color: #3CBADC;''><h1 class='lineaText'>S8</h1></div>"
     }else if(name=="S9"){
         return "<div class='linea' style='background-color: #EB4B6F;''><h1 class='lineaText'>S9</h1></div>"
+    }else if(name=="L12"){
+        return "<div class='linea' style='background-color: #BFBEE0;''><h1 class='lineaText'>L12</h1></div>"
     }else if(name=="L8"){
         return "<div class='linea' style='background-color: #E796BF;''><h1 class='lineaText'>L8</h1></div>"
+    }else if(name=="L7"){
+        return "<div class='linea' style='background-color: #A04B09;''><h1 class='lineaText'>L7</h1></div>"
+    }else if(name=="L6"){
+        return "<div class='linea' style='background-color: #7775B5;''><h1 class='lineaText'>L6</h1></div>"
     }else{
         return "<div class='linea'><h1 class='lineaText'>?¿</h1></div>";
     }

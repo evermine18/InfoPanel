@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-
+const port = process.env.PORT || 80
 var lines = []
 
 app.get('*', (req, res) => {
@@ -27,8 +27,8 @@ io.on('connection', (socket) => {
     console.log('user disconnected');
   });
 });
-server.listen(80, () => {
-  console.log('listening on *:80');
+server.listen(port, () => {
+  console.log('listening on *:'+port);
 });
 function checkLines(){
   var now = new Date();

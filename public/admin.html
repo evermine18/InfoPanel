@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Admin page</h1>
+    <center><div style="width: 80%;">
+        <br><h2>Afegir nova linea:</h2>
+        <div class="input-group mb-3">
+        <h3>Ruta: </h3><select id="ruta" class="form-select" aria-label="Default select example" style="margin-left: 5px;">
+            <option selected value="R5">R5</option>
+            <option value="R6">R6</option>
+            <option value="S3">S3</option>
+            <option value="S4">S4</option>
+            <option value="S8">S8</option>
+            <option value="S9">S9</option>
+            <option value="L8">L8</option>
+        </select></div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Destí</span>
+            <input id="desti" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div  class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Hora</span>
+            <input id="hora" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="inputGroup-sizing-default">Minuts</span>
+            <input id="minuts" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="inputGroup-sizing-default">Data</span>
+            <input id="data" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Via</span>
+            <input id="via" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="afegirRuta();">Afegir</button>
+    </div></center>
+      
+      
+</body>
+<script src="./js/socket.io.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/admin.js"></script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TrainTest</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <div id="content" class="content" style="">
+        <div class="head">
+            <div class="time">
+                <h1 id="timer" class="timeText">00:00</h1>
+            </div>
+            <div style="margin-left: 1vw;"><h1 class="pSortides">Pròximes sortides</h1>
+                <div style="display: flex; "><h2 class="pSalidas">Próximas salidas</h2><h2 class="nDepartures">Next departures</h2></div></div>
+            
+            <img src="./img/fgc.png" alt="" height="70%" style="margin-left: auto;">
+        </div>
+        <table id="linesList">
+            <tr>
+                <th style="width: 10vw;"></th>
+              <th><div style="width: fit-content; align-items: flex-start;"><h1 class="dest">Destinació</h1><h2 class="dest2">Destino</h2><h2 class="dest3">Destination</h2></div></th>
+              <th><div style="width: fit-content;"><h1 class="oth1">Hora</h1><h2 class="oth2">Hora</h2><h2 class="oth3">Hour</h2></div></th>
+              <th><div style="width: fit-content;"><h1 class="oth1">Via</h1><h2 class="oth2">Via</h2><h2 class="oth3">Track</h2></div></th>
+              <th><div style="width: fit-content;"><h1 class="oth1">Observacions</h1><h2 class="oth2">Observaciones</h2><h2 class="oth3">Observations</h2></div></th>
+            </tr>
+            
+          </table> 
+    </div>
+    <div class="bottom"></div>
+
+    
+  </body>
+  <script src="./js/socket.io.js"></script>
+  <script src="./js/index.js"></script>
+</html>

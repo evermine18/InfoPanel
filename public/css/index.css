@@ -1,0 +1,177 @@
+@font-face {
+    font-family: MontserratBold;
+    src: url(./font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: MontserratItalic;
+    src: url(./font/Montserrat-Italic.ttf);
+}
+
+body{
+    margin: 0px;
+    min-width: 800px;
+    min-height: 600px;
+}
+.content{
+    margin: 50px;
+}
+.head{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+.time{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #454240;
+}
+
+.nStations{
+
+}
+.logo{
+
+}
+.pSortides{
+    margin-top: 0;
+    font-size: 3vw;
+    font-family: "MontserratBold";
+    font-weight: 700;
+    color: #454240;
+    margin-bottom: 0;
+}
+.pSalidas{
+    margin-top: auto;
+    font-size: 2vw;
+    font-family: "MontserratBold";
+    font-weight: 400;
+    color: #454240;
+    font-style: italic;
+}
+.nDepartures{
+    margin-top: 0;
+    margin-left: 3vw;
+    font-size: 2vw;
+    font-family: "MontserratItalic";
+    font-weight: 700;
+    color: #454240;
+}
+.timeText{
+    font-size: 3vw;
+    font-family: "MontserratBold";
+    font-weight: 700;
+    color: white;
+}
+table{
+    width: 100%;
+    border: none;
+}
+table th {
+    background-color: #EEEEEE;
+    text-align: center;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+ }
+.dest{
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.4vw;
+    font-family: "MontserratBold";
+    font-weight: 300;
+    color: #454240;
+}
+.dest2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3vw;
+    font-family: "MontserratBold";
+    font-style: italic;
+    text-align: left;
+    font-weight: 300;
+    color: #454240;
+}
+.dest3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: auto;
+    font-size: 1.3vw;
+    font-family: "MontserratItalic";
+    font-style: italic;
+    text-align: left;
+    font-weight: 300;
+    color: #454240;
+}
+.oth1{
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.4vw;
+    font-family: "MontserratBold";
+    font-weight: 300;
+    color: black;
+}
+.oth2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3vw;
+    font-family: "MontserratBold";
+    font-style: italic;
+    text-align: left;
+    font-weight: 300;
+    color: black;
+}
+.oth3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: auto;
+    font-size: 1.3vw;
+    font-family: "MontserratItalic";
+    font-style: italic;
+    text-align: left;
+    font-weight: 300;
+    color: black;
+}
+.info{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: "MontserratBold";
+    font-weight: 100;
+    color: black;
+}
+.linea{
+    background-color: #ABABAB;
+    height: 8vh;
+    width: 7.5vw;
+    border-radius: 40px;
+}
+.lineaText{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "MontserratBold";
+    font-weight: 300;
+    color: white;
+}
+td{
+    margin: 60px;
+    border-bottom: 1px solid #97D700;
+    height: 10vh;
+}
+.bottom{
+    
+    position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+    background-color: #97D700;
+    height: 12vh;
+    z-index:1000
+}

@@ -152,6 +152,11 @@ table {
     width: 7.5vw;
     border-radius: 40px;
 }
+.metro{
+    background-color: #ABABAB;
+    height: 8vh;
+    width: 5.5vw;
+}
 .lineaText{
     margin-top: 0;
     margin-bottom: 0;

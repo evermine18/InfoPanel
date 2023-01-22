@@ -172,12 +172,34 @@ td{
     height: 10vh;
 }
 .bottom{
-    
     position: absolute;
    bottom: 0;
    left: 0;
    right: 0;
-    background-color: #97D700;
     height: 12vh;
     z-index:1000
 }
+.observacionsCont{
+    table-layout: fixed;
+    overflow: hidden;
+}
+.observacions{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5vw;
+    font-family: "MontserratBold";
+    font-weight: 100;
+    color: black;
+    width: 30vw;
+    white-space: nowrap; /* evita el salto de linea */
+  animation: scrolling-text 10s linear infinite; /* animación */
+}
+/* la animación que hace que el texto se desplace */
+@keyframes scrolling-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }

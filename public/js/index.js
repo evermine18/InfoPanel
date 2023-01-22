@@ -19,6 +19,7 @@ socket.on('updateLines', function(msg) {
         cell2.innerHTML="<h1 class='info'>"+data["lines"][i][1]+"</h1>";
         cell3.innerHTML="<h1 class='info'>"+data["lines"][i][2]+"</h1>";
         cell4.innerHTML="<h1 class='info'>"+data["lines"][i][4]+"</h1>";
+        cell5.innerHTML="<div class='observacionsCont'><h1 class='observacions'>"+data["lines"][i][5]+"</h1></div>"
     }
 
     
@@ -47,6 +48,12 @@ function lineDivGenerator(name){
         return "<div class='linea' style='background-color: #448E99;''><h1 class='lineaText'>S3</h1></div>"
     }else if(name=="S4"){
         return "<div class='linea' style='background-color: #9B8202;''><h1 class='lineaText'>S4</h1></div>"
+    }else if(name=="S5"){
+        return "<div class='linea' style='background-color: #568AD6;''><h1 class='lineaText'>S5</h1></div>"
+    }else if(name=="S6"){
+        return "<div class='linea' style='background-color: #E30D40;''><h1 class='lineaText'>S6</h1></div>"
+    }else if(name=="S7"){
+        return "<div class='linea' style='background-color: #991F36;''><h1 class='lineaText'>S7</h1></div>"
     }else if(name=="S8"){
         return "<div class='linea' style='background-color: #3CBADC;''><h1 class='lineaText'>S8</h1></div>"
     }else if(name=="S9"){

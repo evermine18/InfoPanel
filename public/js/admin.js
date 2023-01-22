@@ -7,7 +7,8 @@ function afegirRuta(){
         var hora=document.getElementById("hora").value+":"+document.getElementById("minuts").value;
         var data=document.getElementById("data").value;
         var via=document.getElementById("via").value;
-        var msg={"newLine":[ruta,desti,hora,data,via]};
+        var observacions=document.getElementById("observacions").value;
+        var msg={"newLine":[ruta,desti,hora,data,via,observacions]};
         socket.emit('newLine', JSON.stringify(msg));
     }else{
         alert("Hora inválida")

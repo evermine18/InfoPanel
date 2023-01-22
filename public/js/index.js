@@ -37,15 +37,21 @@ window.addEventListener("resize", setDivHeight);
 function lineDivGenerator(name){
     if(name=="R6"){
         return "<div class='linea'><h1 class='lineaText'>R6</h1></div>";
+    }else if(name=="R60"){
+        return "<div class='linea'><h1 class='lineaText'>R60</h1></div>";
     }
     else if(name=="R5"){
         return "<div class='linea' style='background-color: #309CB2;''><h1 class='lineaText'>R5</h1></div>"
+    }else if(name=="R50"){
+        return "<div class='linea' style='background-color: #309CB2;''><h1 class='lineaText'>R50</h1></div>"
     }else if(name=="S1"){
         return "<div class='linea' style='background-color: #EC6709;''><h1 class='lineaText'>S1</h1></div>"
     }else if(name=="S2"){
         return "<div class='linea' style='background-color: #88BD24;''><h1 class='lineaText'>S2</h1></div>"
     }else if(name=="S3"){
         return "<div class='linea' style='background-color: #448E99;''><h1 class='lineaText'>S3</h1></div>"
+    }else if(name=="S33"){
+        return "<div class='linea' style='background-color: #448E99;''><h1 class='lineaText'>S33</h1></div>"
     }else if(name=="S4"){
         return "<div class='linea' style='background-color: #9B8202;''><h1 class='lineaText'>S4</h1></div>"
     }else if(name=="S5"){

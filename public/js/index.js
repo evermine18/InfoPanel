@@ -56,6 +56,8 @@ function lineDivGenerator(name){
         return "<div class='linea' style='background-color: #9B8202;''><h1 class='lineaText'>S4</h1></div>"
     }else if(name=="S5"){
         return "<div class='linea' style='background-color: #568AD6;''><h1 class='lineaText'>S5</h1></div>"
+    }else if(name=="S55"){
+        return "<div class='linea' style='background-color: #568AD6;''><h1 class='lineaText'>S55</h1></div>"
     }else if(name=="S6"){
         return "<div class='linea' style='background-color: #E30D40;''><h1 class='lineaText'>S6</h1></div>"
     }else if(name=="S7"){
